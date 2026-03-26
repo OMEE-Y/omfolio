@@ -4,7 +4,7 @@ Personal portfolio website showcasing my projects, skills, and experience in ful
 
 ##  Live Demo
 
-[View Portfolio](https://your-portfolio-link.com)
+[View Portfolio](https://omeey.vercel.app/)
 
 ##  Features
 
