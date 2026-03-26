@@ -13,8 +13,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Om Yewale | Portfolio",
-  description: "Engineering student and full-stack developer based in Mumbai.",
+  title: "Om Yewale — Full Stack Developer & Engineering Student",
+  description: "Full stack developer based in Mumbai specializing in Next.js, DevOps, and Agentic AI. Building production-grade web interfaces and autonomous tools.",
+  keywords: ["Om Yewale", "Full Stack Developer", "Mumbai", "Software Engineer", "AI", "Full Stack"],
+  authors: [{ name: "Om Yewale" }],
+  creator: "Om Yewale",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://omeey.vercel.app", 
+    title: "Om Yewale | Portfolio",
+    description: "Engineering student and full-stack developer building the future of agentic web tools.",
+    siteName: "Om Yewale Portfolio",
+  },
+  twitter: {
+
+    title: "Om Yewale | @omee_y",
+    description: "Full Stack Developer & Engineering Student in Mumbai.",
+    creator: "@omee_y",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
