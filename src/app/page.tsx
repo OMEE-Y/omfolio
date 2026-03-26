@@ -13,7 +13,7 @@ import {
 import { NavItem } from "@/components/nav-item";
 import { ProjectCard } from "@/components/project-card";
 import { TechIcon } from "@/components/tech-icon";
-
+import EducationPage from "@/components/education";
 
 
 export default function Portfolio() {
@@ -98,7 +98,7 @@ export default function Portfolio() {
 
          
         </nav>
-
+<EducationPage/>
       </div>
     </div>
   );
