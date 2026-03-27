@@ -72,17 +72,17 @@ export default function Portfolio() {
             projects
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2">
-            <ProjectCard 
-              title="Prompt Bazaar" 
-              description="A curated marketplace for production-grade AI prompts. Features advanced filtering and copy-to-clipboard functionality."
-              tags={["Next.js", "Tailwind"]}
-              github="https://github.com/OMEE-Y"
-              live="https://prompt-bazaar.netlify.app/"
-              image="/prompt-bazaar.png"
-            />
-          </div>
-        </section>
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <ProjectCard 
+      title="Prompt Bazaar" 
+      description="A curated marketplace for production-grade AI prompts. Features advanced filtering and copy-to-clipboard functionality."
+      tags={["Next.js", "Tailwind"]}
+      github="https://github.com/OMEE-Y"
+      live="https://prompt-bazaar.netlify.app/"
+    />
+  </div>
+
+</section>
 
         {/* Tech */}
         <div className="pb-24">
