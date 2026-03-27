@@ -79,6 +79,7 @@ export default function Portfolio() {
       tags={["Next.js", "Tailwind"]}
       github="https://github.com/OMEE-Y"
       live="https://prompt-bazaar.netlify.app/"
+      image="/prompt-bazaar.png"
     />
   </div>
 
