@@ -77,7 +77,7 @@ export default function Portfolio() {
       title="Prompt Bazaar" 
       description="A curated marketplace for production-grade AI prompts. Features advanced filtering and copy-to-clipboard functionality."
       tags={["Next.js", "Tailwind"]}
-      github="https://github.com/OMEE-Y"
+      github="https://github.com/OMEE-Y/prompt-bazaar"
       live="https://prompt-bazaar.netlify.app/"
       image="/prompt-bazaar.png"
     />
