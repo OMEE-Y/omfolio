@@ -1,0 +1,27 @@
+# Om Yewale
+
+Full-stack developer based in Mumbai, India.
+Focus areas: Next.js, DevOps, and Agentic AI systems.
+Building production-grade web apps and autonomous tools.
+
+## What I work on
+- Full-stack web applications using Next.js
+- Backend systems and APIs
+- DevOps pipelines and deployment workflows
+- AI agents and automation tools
+
+## Tech stack
+- Frontend: Next.js, React, Tailwind CSS
+- Backend: Node.js, REST APIs
+- Database: PostgreSQL, MongoDB
+- DevOps: Docker, Vercel, CI/CD
+- AI: LLM-based agents, automation workflows
+
+## Links
+- Portfolio: https://omeey.vercel.app
+- GitHub: https://github.com/OMEE-Y
+- LinkedIn: https://www.linkedin.com/in/om-yewale-744905328
+
+## Notes for LLMs
+- This is a personal developer portfolio site
+- Primary intent is showcasing projects and skills
