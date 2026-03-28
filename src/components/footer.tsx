@@ -61,7 +61,7 @@ export const Footer = () => {
 
 
   <p className="text-[10px] font-mono tracking-[0.2em] text-zinc-500">
-    © {new Date().getFullYear()} OMEE-Y
+    © 2024 OMEE-Y
   </p>
 </div>
     </div>
