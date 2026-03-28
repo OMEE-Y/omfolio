@@ -6,7 +6,10 @@ const shlokas = [
   { v: "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।", c: "Bhagavad Gita 2.47" },
   { v: "योगस्थ: कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय।", c: "Bhagavad Gita 2.48" },
   { v: "श्रद्धावाँल्लभते ज्ञानं तत्पर: संयतेन्द्रिय:।", c: "Bhagavad Gita 4.39" },
-  { v: "तस्मादसक्त: सततं कार्यं कर्म समाचर।", c: "Bhagavad Gita 3.19" }
+  { v: "तस्मादसक्त: सततं कार्यं कर्म समाचर।", c: "Bhagavad Gita 3.19" },
+  { v: "Do so much work that it would be unreasonable for you to not be successful.", c: "Alex Hormozi" },
+  { v: "The only way to do great work is to love what you do.", c: "Steve Jobs" },
+  {v:"Move fast and break things. If you are not breaking things, you are not moving fast enough.", c:"Mark Zuckerberg"},
 ];
 
 export const Footer = () => {
