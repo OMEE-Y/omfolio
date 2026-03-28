@@ -34,8 +34,13 @@ export default function Portfolio() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
-              engineering student @ mumbai
-            </p>
+             <span>
+     it student at{" "}
+    <span className="text-zinc-900 dark:text-white font-medium">
+      mumbai
+    </span>
+  </span>
+</p>
           </div>
           
           <div className="relative group shrink-0">
@@ -55,21 +60,21 @@ export default function Portfolio() {
 
 
         {/* About */}
-        <section className="mb-20 space-y-4">
-          <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-2 tracking-tighter">
-            about
-          </h2>
+     <section className="mb-16 px-4 sm:px-0">
+  <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-3 tracking-tight">
+    about
+  </h2>
 
-          <div className="space-y-4 text-[16px] leading-7 max-w-xl text-zinc-700 dark:text-zinc-300">
-            <p>
-              Hey, I'm Om, a full stack developer who loves building clean, modern websites and apps where design, functionality, and even the smallest details matter.
-            </p>
+  <div className="space-y-5 text-[15.5px] sm:text-[16px] leading-7 sm:leading-8 max-w-2xl text-zinc-700 dark:text-zinc-300">
+    <p>
+      Hey, I'm Om, a full stack developer who loves building clean, modern websites and apps where design, functionality, and even the smallest details matter.
+    </p>
 
-            <p>
-              Tech stack isn't my concern, I'm flexible with whatever the project needs, though I prefer modern frameworks and tools.
-            </p>
-          </div>
-        </section>
+    <p>
+      Tech stack isn't my concern, I'm flexible with whatever the project needs, though I prefer modern frameworks and tools.
+    </p>
+  </div>
+</section>
 
         {/* Projects */}
         <section className="mb-20">

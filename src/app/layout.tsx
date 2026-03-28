@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Om Yewale — Full Stack Developer & Engineering Student",
+  title: "Om Yewale",
   description: "Full stack developer based in Mumbai specializing in Next.js, DevOps, and Agentic AI. Building production-grade web interfaces and autonomous tools.",
   keywords: ["Om Yewale", "Full Stack Developer", "Mumbai", "Software Engineer", "AI", "Full Stack"],
   authors: [{ name: "Om Yewale" }],
