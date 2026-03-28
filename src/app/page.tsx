@@ -87,7 +87,7 @@ export default function Portfolio() {
       tags={["Next.js", "Tailwind", "AI"]}
       image="/prompt-bazaar.png"
       github="https://github.com/OMEE-Y/prompt-bazaar"
-      live="https://promptbazaar.netlify.app"
+      live="https://prompt-bazaar.netlify.app"
       skills={[
         { 
           name: "React", 
