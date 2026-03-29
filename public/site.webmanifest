@@ -1,0 +1,37 @@
+{
+  "name": "Om Yewale | Portfolio",
+  "short_name": "Om Yewale",
+  "description": "Full stack developer specializing in Next.js, DevOps, and Agentic AI.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "education",
+    "productivity",
+    "developer tools"
+  ],
+  "lang": "en",
+  "dir": "ltr"
+}
