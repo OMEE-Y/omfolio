@@ -18,18 +18,47 @@ export const TechIcon = () => {
   ];
 
   return (
-    <div className="mt-8">
-  <h2 className="text-2xl font-bold text-black dark:text-white mb-4 tracking-tight">
-  skills
-</h2>
+    <div className="mt-14">
+      <h2 className="text-2xl font-semibold text-black dark:text-white mb-6 tracking-tight">
+        skills
+      </h2>
 
-      <div className="grid grid-cols-3 sm:grid-cols-4 gap-y-6 gap-x-4">
+      <div className="flex flex-wrap gap-2.5">
         {techStack.map((tech, i) => (
-          <div key={i} className="flex items-center gap-3">
-            <i className={`${tech.icon} text-xl text-zinc-700 dark:text-zinc-300`} />
-            <span className="text-sm text-zinc-600 dark:text-zinc-400">
-              {tech.name}
-            </span>
+          <div
+            key={i}
+            draggable="false"
+           className={`
+  group inline-flex items-center gap-2
+  px-3 py-1.5 text-sm font-medium
+  rounded-lg relative
+
+  border border-dashed border-black/30 dark:border-white/40
+  bg-white dark:bg-black
+  text-black dark:text-white
+
+  shadow-sm
+  transition-all duration-200
+
+  hover:bg-neutral-100 dark:hover:bg-white/10
+  hover:-translate-y-[1px]
+  hover:shadow-md
+
+  select-none
+  cursor-grab active:cursor-grabbing
+`}
+          >
+     <i
+  className={`
+    ${tech.icon}
+    text-base
+    opacity-80
+    transition-transform duration-200
+    group-hover:scale-110
+  `}
+/>
+            {/* label */}
+            <span>{tech.name}</span>
           </div>
         ))}
       </div>

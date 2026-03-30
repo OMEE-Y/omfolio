@@ -3,11 +3,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* Light Mode (Default) */
 :root {
-  color-scheme: dark;
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+/* Dark Mode (Applied when class="dark" is on <html>) */
+.dark {
+  --background: #09090b;
+  --foreground: #ffffff;
 }
 
 body {
-  @apply bg-white text-zinc-800 dark:bg-[#050505] dark:text-zinc-400 antialiased;
+  background-color: var(--background);
+  color: var(--foreground);
 }

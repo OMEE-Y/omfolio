@@ -25,7 +25,7 @@ export const Footer = () => {
   if (!mounted) return null;
 
  return (
-  <footer className="w-full mt-24 pb-32 px-6 border-t border-zinc-100 dark:border-white/5">
+ <footer className="w-full mt-24 pb-20 px-6 border-t border-zinc-200 dark:border-white/5 bg-zinc-50 dark:bg-zinc-950/50 backdrop-blur-sm">
     
     <div className="max-w-2xl mx-auto pt-16 flex flex-col items-center text-center">
       
