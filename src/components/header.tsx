@@ -39,7 +39,7 @@ export default function Header() {
           <img
             src="/pfp.png"
             alt="Om Yewale"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover "
           />
         </div>
       </header>
@@ -48,7 +48,7 @@ export default function Header() {
       {open && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
           
-          {/* Close Button */}
+        
           <button
             onClick={() => setOpen(false)}
             className="absolute top-6 right-6 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition"
