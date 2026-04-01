@@ -16,41 +16,61 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Om Yewale",
+    
+
   description: "Full stack developer based in Mumbai specializing in Next.js, DevOps, and Agentic AI. Building production-grade web interfaces and autonomous tools.",
-  keywords: ["Om Yewale", "Full Stack Developer", "Mumbai", "Software Engineer", "AI", "Full Stack"],
-  authors: [{ name: "Om Yewale" }],
+  keywords: ["Om Yewale", "Full Stack Developer", "Mumbai", "Software Engineer", "Next.js", "Agentic AI", "DevOps"],
+  authors: [{ name: "Om Yewale", url: "https://omeey.vercel.app" }],
   creator: "Om Yewale",
+  metadataBase: new URL("https://omeey.vercel.app"), 
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://omeey.vercel.app", 
-    title: "Om Yewale | Portfolio",
-    description: "Engineering student and full-stack developer building the future of agentic web tools.",
-    siteName: "Om Yewale Portfolio",
+    url: "https://omeey.vercel.app",
+    title: "Om Yewale | Full Stack Engineer",
+    description: "Engineering student building the future of agentic web tools and production-grade interfaces.",
+    siteName: "Om Yewale",
+    images: [
+      {
+        url: "/opengraph-image.png", // Next.js standard naming
+        width: 1200,
+        height: 630,
+        alt: "Om Yewale Portfolio Preview",
+      },
+    ],
   },
   twitter: {
-
-    title: "Om Yewale | @omee_y",
+    card: "summary_large_image", // Makes your OG image show up big on X
+    title: "Om Yewale (@omee_y)",
     description: "Full Stack Developer & Engineering Student in Mumbai.",
     creator: "@omee_y",
+    images: ["/opengraph-image.png"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" }, // Fallback for older browsers
-      { url: "/favicon.svg", type: "image/svg+xml" }, // Modern, crisp scaling
-      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
     ],
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/apple-touch-icon.png", sizes: "180x180" },
     ],
   },
   manifest: "/site.webmanifest",
 };
-
 export default function RootLayout({
   children,
 }: {
