@@ -3,13 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Light Mode (Default) */
+
 :root {
   --background: #ffffff;
   --foreground: #000000;
 }
 
-/* Dark Mode (Applied when class="dark" is on <html>) */
+
 .dark {
   --background: #09090b;
   --foreground: #ffffff;

@@ -19,6 +19,7 @@ import Header from "@/components/header"
 
 export default function Portfolio() {
   return (
+    
     <div className="min-h-screen bg-white dark:bg-[#050505] text-zinc-700 dark:text-zinc-400 selection:bg-black dark:selection:bg-white selection:text-white dark:selection:text-black font-sans antialiased px-6 py-24 transition-colors duration-500">
       
       <div className="max-w-2xl mx-auto pb-32">
