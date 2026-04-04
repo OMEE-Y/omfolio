@@ -14,22 +14,36 @@ const shlokas = [
 export const Footer = () => {
   const [quote, setQuote] = useState(shlokas[0]);
   const [mounted, setMounted] = useState(false);
+  const [currentTime, setCurrentTime] = useState("");
 
   useEffect(() => {
     setMounted(true);
     setQuote(shlokas[Math.floor(Math.random() * shlokas.length)]);
+
+    // Update time every second
+    const timer = setInterval(() => {
+      const now = new Date();
+      setCurrentTime(
+        now.toLocaleTimeString("en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: true,
+        })
+      );
+    }, 1000);
+
+    return () => clearInterval(timer);
   }, []);
 
   if (!mounted) return null;
 
   return (
-    
     <footer className="w-full bg-white dark:bg-[#050505] text-black dark:text-white selection:bg-orange-500/30 border-t border-black/[0.05] dark:border-white/[0.03] transition-colors duration-300">
       <div className="max-w-4xl mx-auto px-6 py-16 md:py-24 flex flex-col items-center">
         
         {/* Quote Section */}
         <div className="relative mb-16 md:mb-24 text-center group/quote w-full">
-          {/* Subtle glow that flips color based on mode */}
           <div className="absolute inset-0 bg-orange-500/[0.05] dark:bg-white/[0.02] blur-[60px] md:blur-[120px] rounded-full -z-10" />
           
           <p className="text-xl md:text-4xl font-light tracking-tight text-zinc-800 dark:text-zinc-200 leading-relaxed mb-8 md:mb-12 px-2">
@@ -45,23 +59,36 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Row */}
+        {/* Bottom Bar */}
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-t border-black/[0.05] dark:border-white/[0.03]">
           
-          {/* Mumbai Status */}
-          <div className="flex items-center gap-3.5 group/loc cursor-default">
-            <div className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full rounded-full bg-orange-500/40 animate-ping" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-orange-500 shadow-[0_0_10px_rgba(249,115,22,0.5)]" />
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+            {/* Location */}
+            <div className="flex items-center gap-3.5 group/loc cursor-default">
+              <div className="relative flex h-1.5 w-1.5">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-orange-500/40 animate-ping" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-orange-500 shadow-[0_0_10px_rgba(249,115,22,0.5)]" />
+              </div>
+              <p className="text-[9px] font-mono tracking-[0.3em] text-zinc-500 group-hover/loc:text-zinc-900 dark:group-hover/loc:text-zinc-300 transition-colors uppercase">
+                Mumbai, India
+              </p>
             </div>
-            <p className="text-[9px] font-mono tracking-[0.3em] text-zinc-500 group-hover/loc:text-zinc-900 dark:group-hover/loc:text-zinc-300 transition-colors uppercase">
-              Mumbai, India
-            </p>
+
+            
+            
+            
           </div>
 
           <div className="flex items-center">
             <span className="text-[9px] font-mono tracking-[0.3em] text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-300 transition-colors uppercase">
-              © 2026 OM YEWALE
+          <a 
+              href="https://www.google.com/search?q=time" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[9px] font-mono tracking-[0.3em] text-zinc-400 dark:text-zinc-600 hover:text-orange-500 dark:hover:text-white transition-colors uppercase"
+            >
+              {currentTime || "00:00:00 AM"}
+            </a>
             </span>
           </div>
 
