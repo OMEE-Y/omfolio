@@ -19,7 +19,7 @@ export const TechIcon = () => {
 
   return (
     <div className="mt-14">
-      <h2 className="text-2xl font-semibold text-black dark:text-white mb-6 tracking-tight">
+      <h2 className="text-2xl font-bold text-black dark:text-white mb-6 tracking-tight">
         skills
       </h2>
 
@@ -57,7 +57,6 @@ export const TechIcon = () => {
     group-hover:scale-110
   `}
 />
-            {/* label */}
             <span>{tech.name}</span>
           </div>
         ))}

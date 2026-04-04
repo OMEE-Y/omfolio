@@ -14,7 +14,7 @@ import { TechIcon } from "@/components/tech-icon";
 import EducationPage from "@/components/education";
 import Gears from "@/components/gears";
 import {Footer} from "@/components/footer";
-import Header from "@/components/header"
+import Header from "@/components/header";
 
 
 export default function Portfolio() {
@@ -98,6 +98,7 @@ export default function Portfolio() {
             <EnvelopeSimple size={20} weight="duotone" />
           </a>
         </nav>
+       
 <Footer />
       </div>
     </div>

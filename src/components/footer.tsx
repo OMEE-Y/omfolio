@@ -23,10 +23,7 @@ export const Footer = () => {
   if (!mounted) return null;
 
   return (
-    /* Logic: 
-       - Default (Light Mode): White bg, black text, light border
-       - Dark Mode: Deep black bg (#050505), white text, very faint border
-    */
+    
     <footer className="w-full bg-white dark:bg-[#050505] text-black dark:text-white selection:bg-orange-500/30 border-t border-black/[0.05] dark:border-white/[0.03] transition-colors duration-300">
       <div className="max-w-4xl mx-auto px-6 py-16 md:py-24 flex flex-col items-center">
         
