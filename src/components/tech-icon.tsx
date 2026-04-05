@@ -4,16 +4,16 @@ import React from "react";
 
 export const TechIcon = () => {
   const techStack = [
-    { icon: "devicon-java-plain", name: "Java" },
-    { icon: "devicon-javascript-plain", name: "JavaScript" },
-    { icon: "devicon-typescript-plain", name: "TypeScript" },
-    { icon: "devicon-react-original", name: "React" },
-    { icon: "devicon-nodejs-plain", name: "Node.js" },
-    { icon: "devicon-express-original", name: "Express" },
-    { icon: "devicon-mongodb-plain", name: "MongoDB" },
-    { icon: "devicon-mysql-plain", name: "MySQL" },
-    { icon: "devicon-docker-plain", name: "Docker" },
-    { icon: "devicon-git-plain", name: "Git" },
+   { icon: "devicon-java-plain coloured", name: "Java" },
+    { icon: "devicon-javascript-plain colored", name: "JavaScript" },
+    { icon: "devicon-typescript-plain colored", name: "TypeScript" },
+    { icon: "devicon-react-original colored", name: "React" },
+    { icon: "devicon-nodejs-plain colored", name: "Node.js" },
+    { icon: "devicon-express-original", name: "Express" }, 
+    { icon: "devicon-mongodb-plain colored", name: "MongoDB" },
+    { icon: "devicon-mysql-plain colored", name: "MySQL" },
+    { icon: "devicon-docker-plain colored", name: "Docker" },
+    { icon: "devicon-git-plain colored", name: "Git" },
     { icon: "devicon-linux-plain", name: "Linux" },
   ];
 
