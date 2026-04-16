@@ -60,6 +60,40 @@ export default function Portfolio() {
         }
       ]}
     />
+    <ProjectCard 
+  title="LinkVault" 
+  description="A secure, cloud-based 'Second Brain' for digital resources. Includes JWT authentication, automated tag management, and a high-performance link organization system."
+  tags={["Next.js", "MongoDB", "Express", "Tailwind"]}
+  image="/linkvault.png" 
+  github="https://github.com/OMEE-Y/secondbrain-link-vault-" 
+  live="https://secondbrain-link-vault.vercel.app/"
+  skills={[
+    { 
+      name: "Next.js", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" 
+    },
+    { 
+      name: "MongoDB", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" 
+    },
+    { 
+      name: "Node.js", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" 
+    },
+    { 
+      name: "Tailwind CSS", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" 
+    },
+    { 
+  name: "Express", 
+  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" 
+},
+{ 
+  name: "TypeScript", 
+  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" 
+}
+  ]}
+/>
     
    
   </div>
