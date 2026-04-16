@@ -41,62 +41,25 @@ export default function Portfolio() {
          <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-3 tracking-tight">
     projects
   </h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-    <ProjectCard 
-      title="Prompt Bazaar" 
-      description="A curated marketplace for production-grade AI prompts. Features advanced filtering and copy-to-clipboard functionality."
-      tags={["Next.js", "Tailwind", "AI"]}
-      image="/prompt-bazaar.png"
-      github="https://github.com/OMEE-Y/prompt-bazaar"
-      live="https://prompt-bazaar.netlify.app"
-      skills={[
-        { 
-          name: "React", 
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" 
-        },
-        { 
-          name: "Tailwind CSS", 
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" 
-        }
-      ]}
-    />
-    <ProjectCard 
-  title="LinkVault" 
-  description="A secure, cloud-based 'Second Brain' for digital resources. Includes JWT authentication, automated tag management, and a high-performance link organization system."
-  tags={["Next.js", "MongoDB", "Express", "Tailwind"]}
-  image="/linkvault.png" 
-  github="https://github.com/OMEE-Y/secondbrain-link-vault-" 
-  live="https://secondbrain-link-vault.vercel.app/"
-  skills={[
-    { 
-      name: "Next.js", 
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" 
-    },
-    { 
-      name: "MongoDB", 
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" 
-    },
-    { 
-      name: "Node.js", 
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" 
-    },
-    { 
-      name: "Tailwind CSS", 
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" 
-    },
-    { 
-  name: "Express", 
-  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" 
-},
-{ 
-  name: "TypeScript", 
-  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" 
-}
-  ]}
-/>
-    
+ <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+  <ProjectCard 
+    title="Links Vault" 
+    description="A high-performance Second Brain for digital resources like links to store. Built with MongoDB for dynamic scaling and JWT for secure resource management."
+    image="/linkvault.png" 
+    github="https://github.com/OMEE-Y/secondbrain-link-vault-" 
+    live="https://secondbrain-link-vault.vercel.app/"
    
-  </div>
+  />
+
+  <ProjectCard 
+    title="Prompt Bazaar" 
+    description="Curated marketplace for production-grade AI prompts. Features advanced category filtering and instant copy-to-clipboard utility."
+    image="/prompt-bazaar.png"
+    github="https://github.com/OMEE-Y/prompt-bazaar"
+    live="https://prompt-bazaar.netlify.app"
+    
+  />
+</div>
 </section>
 
         {/* Tech */}
