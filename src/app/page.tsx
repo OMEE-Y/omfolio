@@ -42,14 +42,21 @@ export default function Portfolio() {
     projects
   </h2>
  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-  <ProjectCard 
-    title="Links Vault" 
-    description="A high-performance Second Brain for digital resources like links to store. Built with MongoDB for dynamic scaling and JWT for secure resource management."
-    image="/linkvault.png" 
-    github="https://github.com/OMEE-Y/secondbrain-link-vault-" 
-    live="https://secondbrain-link-vault.vercel.app/"
-   
-  />
+ <ProjectCard 
+  title="Links Vault" 
+  description="A high-performance Second Brain for digital resources like links to store. Built with MongoDB for dynamic scaling and JWT for secure resource management."
+  image="/linkvault.png" 
+  github="https://github.com/OMEE-Y/secondbrain-link-vault-" 
+  live="https://secondbrain-link-vault.vercel.app/"
+  skills={[
+    { name: "Next.js" },
+     { name: "Tailwindcss"},
+    { name: "Express" },
+    {name : "Node.js"},
+    { name: "MongoDB" },
+    { name: "JWT" }
+  ]}
+/>
 
   <ProjectCard 
     title="Prompt Bazaar" 
@@ -57,6 +64,10 @@ export default function Portfolio() {
     image="/prompt-bazaar.png"
     github="https://github.com/OMEE-Y/prompt-bazaar"
     live="https://prompt-bazaar.netlify.app"
+    skills={[
+    { name: "React.js" },
+    { name: "Tailwindcss"}
+  ]}
     
   />
 </div>
