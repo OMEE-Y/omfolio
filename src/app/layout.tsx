@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "Om Yewale",
     images: [
       {
-        url: "/opengraph-image.png", // Next.js standard naming
+        url: "/opengraph.png", 
         width: 1200,
         height: 630,
         alt: "Om Yewale Portfolio Preview",
@@ -43,11 +43,11 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image", // Makes your OG image show up big on X
+    card: "summary_large_image", 
     title: "Om Yewale (@omee_y)",
     description: "Full Stack Developer & Engineering Student in Mumbai.",
     creator: "@omee_y",
-    images: ["/opengraph-image.png"],
+    images: ["/opengraph.png"],
   },
   robots: {
     index: true,
