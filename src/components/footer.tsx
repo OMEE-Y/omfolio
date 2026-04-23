@@ -59,17 +59,17 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
+       
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-t border-black/[0.05] dark:border-white/[0.03]">
           
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-            {/* Location */}
+           
             <div className="flex items-center gap-3.5 group/loc cursor-default">
               <div className="relative flex h-1.5 w-1.5">
                 <span className="absolute inline-flex h-full w-full rounded-full bg-orange-500/40 animate-ping" />
                 <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-orange-500 shadow-[0_0_10px_rgba(249,115,22,0.5)]" />
               </div>
-              <p className="text-[9px] font-mono tracking-[0.3em] text-zinc-500 group-hover/loc:text-zinc-900 dark:group-hover/loc:text-zinc-300 transition-colors uppercase">
+              <p className="text-[9px] font-mono tracking-[0.3em] text-zinc-500 group-hover/loc:text-orange-500 dark:group-hover/loc:text-white transition-colors uppercase">
                 Mumbai, India
               </p>
             </div>
@@ -79,18 +79,11 @@ export const Footer = () => {
             
           </div>
 
-          <div className="flex items-center">
-            <span className="text-[9px] font-mono tracking-[0.3em] text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-300 transition-colors uppercase">
-          <a 
-              href="https://www.google.com/search?q=time" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-[9px] font-mono tracking-[0.3em] text-zinc-400 dark:text-zinc-600 hover:text-orange-500 dark:hover:text-white transition-colors uppercase"
-            >
-              {currentTime || "00:00:00 AM"}
-            </a>
-            </span>
-          </div>
+         <div className="flex items-center">
+  <span className="text-[9px] font-mono tracking-[0.3em] text-zinc-400 dark:text-zinc-600 hover:text-orange-500 dark:hover:text-white transition-colors uppercase">
+    {currentTime || "00:00:00 AM"}
+  </span>
+</div>
 
         </div>
       </div>
