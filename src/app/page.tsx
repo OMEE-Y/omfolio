@@ -30,11 +30,10 @@ export default function Portfolio() {
         
 
 
-        {/* About */}
+        
     
 
   <AboutSection/>
-
 
 
       <section className="py-12">
@@ -67,13 +66,11 @@ export default function Portfolio() {
     skills={[
     { name: "React.js" },
     { name: "Tailwindcss"}
-  ]}
-    
-  />
+  ]} />
 </div>
 </section>
 
-        {/* Tech */}
+      
         <div className="pb-24">
           <TechIcon />
         </div>
@@ -81,7 +78,6 @@ export default function Portfolio() {
         <EducationPage />
         <Gears />
 
-        {/* Dock */}
         <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-white/70 dark:bg-[#0a0a0a]/70 backdrop-blur-md border border-zinc-200/80 dark:border-white/10 px-2 py-1.5 rounded-xl flex items-center gap-1 shadow-lg z-50">
           <NavItem icon={House} href="/" external={false} />
           <div className="w-px h-4 bg-zinc-200/80 dark:bg-white/10 mx-1" />
