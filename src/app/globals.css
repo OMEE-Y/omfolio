@@ -19,3 +19,7 @@ body {
   background-color: var(--background);
   color: var(--foreground);
 }
+#oneko {
+  filter: grayscale(100%) sepia(100%) hue-rotate(-25deg) saturate(97) brightness(100) contrast(1.2) !important;
+  pointer-events: none;
+}

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -84,11 +85,16 @@ export default function RootLayout({
           rel="stylesheet" 
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" 
         />
+        
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
       
         
           {children}
+          <Script 
+          src="https://sleepie.uk/oneko.js" 
+          strategy="beforeInteractive" 
+        />
 
         <Analytics />
         <SpeedInsights/>
