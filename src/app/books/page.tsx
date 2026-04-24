@@ -8,12 +8,7 @@ const bookshelf = [
     author: "Andreas C. Müller & Sarah Guido", 
     pdfUrl: "/books/intro-to-ml.pdf" 
   },
-  { 
-    id: "linux-basics", 
-    title: "Linux Basics for Hackers", 
-    author: "OccupyTheWeb", 
-    pdfUrl: "/books/linux-basics-for-hackers.pdf" 
-  },
+  
   { 
     id: "python-ds-handbook", 
     title: "Python Data Science Handbook", 
@@ -47,7 +42,7 @@ export default function BooksPage() {
       <div className="grid gap-4">
         {bookshelf.map((book) => (
           <BookCard 
-            key={book.id} // Using unique ID instead of index
+            key={book.id} 
             title={book.title}
             author={book.author}
             pdfUrl={book.pdfUrl}
