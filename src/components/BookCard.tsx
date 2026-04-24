@@ -20,7 +20,6 @@ export default function BookCard({ title, author, pdfUrl }: BookProps) {
       />
 
       <div className="flex items-start gap-4">
-        {/* Updated Icon */}
         <div className="p-3 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400">
           <FileText size={24} />
         </div>
