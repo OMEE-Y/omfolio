@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
+
 
 export default function AboutSection() {
   return (
@@ -27,17 +27,9 @@ export default function AboutSection() {
   </p>
 
   <p>
-          In my free time, I learn <strong>Python</strong> and read some{" "}
+          In my free time, I learn <strong>Python</strong> and read some
           
-         <strong>
-            <Link 
-              href="/books"
-             
-              className="underline underline-offset-4 decoration-zinc-400 hover:decoration-zinc-900 dark:hover:decoration-white transition-colors duration-200"
-            >
-              books
-            </Link>{" "}
-          </strong>
+         <strong> books </strong>
           or tech blogs
         </p>
 </div>
