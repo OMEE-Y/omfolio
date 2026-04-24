@@ -27,10 +27,7 @@ export default function AboutSection() {
   </p>
 
   <p>
-          In my free time, I learn <strong>Python</strong> and read some
-          
-         <strong> books </strong>
-          or tech blogs
+          In my free time, I learn <strong>Python</strong> and read some books          or tech blogs
         </p>
 </div>
     </div>
