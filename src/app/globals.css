@@ -20,6 +20,6 @@ body {
   color: var(--foreground);
 }
 #oneko {
-   filter: grayscale(100%) sepia(100%) hue-rotate(-25deg) saturate(97) brightness(100) contrast(1.2) !important;
   pointer-events: none;
+  filter: brightness(1.1) contrast(1.2); /* tweak look */
 }
