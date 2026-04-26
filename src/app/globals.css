@@ -21,5 +21,5 @@ body {
 }
 #oneko {
   pointer-events: none;
-  filter: brightness(1.1) contrast(1.2); /* tweak look */
+  
 }

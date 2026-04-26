@@ -94,7 +94,7 @@ export default function RootLayout({
           <Script 
           src="https://sleepie.uk/oneko.js" 
           strategy="beforeInteractive" 
-          data-cat = "/oneko-maia.gif"
+          data-cat = "/black.gif"
         
         />
 
