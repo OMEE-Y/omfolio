@@ -29,7 +29,7 @@ export default function EducationPage() {
 
   return (
     <section className="mb-24 space-y-6">
-      <h2 className="text-2xl font-bold text-black dark:text-white tracking-tighter">
+      <h2 className="font-instrument text-3xl font-bold text-black dark:text-white tracking-tighter">
         education
       </h2>
 

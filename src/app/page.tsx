@@ -37,7 +37,7 @@ export default function Portfolio() {
 
 
       <section className="py-12">
-         <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-3 tracking-tight">
+         <h2 className=" font-instrument text-3xl font-bold text-zinc-900 dark:text-white mb-3 tracking-tight">
     projects
   </h2>
  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

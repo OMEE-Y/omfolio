@@ -52,7 +52,7 @@ export const TechIcon = () => {
   return (
     
     <div className="mt-8 md:mt-14 w-full mx-auto px-4 md:px-0">
-      <h2 className="text-2xl font-bold text-black dark:text-white mb-6 tracking-tight">
+      <h2 className="font-instrument text-3xl font-bold text-black dark:text-white mb-6 tracking-tight">
         skills
       </h2>
 
