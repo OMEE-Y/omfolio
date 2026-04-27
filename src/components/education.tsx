@@ -29,10 +29,9 @@ export default function EducationPage() {
 
   return (
     <section className="mb-24 space-y-6">
-      <h2 className="font-instrument text-3xl font-bold text-black dark:text-white tracking-tighter">
-        education
-      </h2>
-
+       <h1 className="font-instrument text-3xl font-weight:400 text-zinc-900 dark:text-white mb-2 tracking-tighter">
+  education
+</h1>
       <div className="space-y-8 max-w-xl">
         {educationData.map((item, index) => (
           <div 

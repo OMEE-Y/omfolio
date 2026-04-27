@@ -6,9 +6,9 @@ import React from "react";
 export default function AboutSection() {
   return (
     <div className="mt-14">
-      <h2 className="font-instrument text-3xl font-bold text-zinc-900 dark:text-white mb-3 tracking-tight">
-        about
-      </h2>
+       <h1 className="font-instrument text-3xl font-weight:400 text-zinc-900 dark:text-white mb-2 tracking-tighter">
+  about 
+</h1>
       <div className="space-y-5 text-[15.5px] sm:text-[16px] leading-7 sm:leading-8 max-w-2xl text-zinc-700 dark:text-zinc-300">
   <p>
     Hey, I'm Om Yewale, a full stack developer who loves building clean, modern

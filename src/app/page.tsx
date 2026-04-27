@@ -37,9 +37,9 @@ export default function Portfolio() {
 
 
       <section className="py-12">
-         <h2 className=" font-instrument text-3xl font-bold text-zinc-900 dark:text-white mb-3 tracking-tight">
-    projects
-  </h2>
+         <h1 className="font-instrument text-3xl font-weight:400 text-zinc-900 dark:text-white mb-2 tracking-tighter">
+  projects
+</h1>
  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
  <ProjectCard 
   title="Links Vault" 

@@ -52,9 +52,9 @@ export const TechIcon = () => {
   return (
     
     <div className="mt-8 md:mt-14 w-full mx-auto px-4 md:px-0">
-      <h2 className="font-instrument text-3xl font-bold text-black dark:text-white mb-6 tracking-tight">
-        skills
-      </h2>
+     <h1 className="font-instrument text-3xl font-weight:400 text-zinc-900 dark:text-white mb-2 tracking-tighter">
+  skills
+</h1>
 
       {techCategories.map((cat, catIdx) => (
         <div key={catIdx} className="mb-8">

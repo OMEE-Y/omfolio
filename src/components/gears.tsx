@@ -20,9 +20,9 @@ return (
   <div className="pb-32">
     <>
       <div className="flex items-center justify-between mb-8">
-        <h2 className=" font-instrument text-3xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-100">
-          gears
-        </h2>
+         <h1 className="font-instrument text-3xl font-weight:400 text-zinc-900 dark:text-white mb-2 tracking-tighter">
+  gears
+</h1>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
