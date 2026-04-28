@@ -17,11 +17,35 @@ import { Footer } from "@/components/footer";
 import Header from "@/components/header";
 import AboutSection from "@/components/about";
 
-
 export default function Portfolio() {
+  // Common style for the stripe pattern
+  const stripeStyle = {
+    backgroundImage: "repeating-linear-gradient(-45deg, transparent, transparent 2px, currentColor 2px, currentColor 3px, transparent 3px, transparent 6px)"
+  };
+
   return (
-    <div className="min-h-screen bg-white dark:bg-[#050505] text-zinc-700 dark:text-zinc-400 selection:bg-black dark:selection:bg-white selection:text-white dark:selection:text-black font-sans antialiased px-6 py-24 transition-colors duration-500">
-      <div className="max-w-2xl mx-auto pb-32">
+    <div 
+      className="relative min-h-screen bg-white dark:bg-[#050505] text-zinc-700 dark:text-zinc-400 selection:bg-black dark:selection:bg-white selection:text-white dark:selection:text-black font-sans antialiased px-6 py-24 transition-colors duration-500"
+      style={{ scrollbarGutter: 'stable' }} // Ensures the right side doesn't shift when scrolling
+    >
+      
+      {/* BACKGROUND LAYER: Stripes */}
+      {/* Hidden on mobile, visible on medium screens and up */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        {/* Left Stripe */}
+        <div 
+          className="hidden md:block absolute left-0 top-0 bottom-0 w-[60px] dark:opacity-[0.15] opacity-[0.2] border-r border-dashed dark:border-[#eee] border-[#000]/70" 
+          style={stripeStyle}
+        />
+        {/* Right Stripe */}
+        <div 
+          className="hidden md:block absolute right-0 top-0 bottom-0 w-[60px] dark:opacity-[0.15] opacity-[0.2] border-l border-dashed dark:border-[#eee] border-[#000]/70" 
+          style={stripeStyle}
+        />
+      </div>
+
+      {/* CONTENT LAYER: Stays on top of stripes */}
+      <div className="relative z-10 max-w-2xl mx-auto pb-32">
         <Header />
         
         <AboutSection />
@@ -64,10 +88,10 @@ export default function Portfolio() {
           <TechIcon />
         </div>
 
-      
         <EducationPage />
         <Gears />
 
+        {/* Floating Nav */}
         <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-white/70 dark:bg-[#0a0a0a]/70 backdrop-blur-md border border-zinc-200/80 dark:border-white/10 px-2 py-1.5 rounded-xl flex items-center gap-1 shadow-lg z-50">
           <NavItem icon={House} href="/" external={false} />
           <div className="w-px h-4 bg-zinc-200/80 dark:bg-white/10 mx-1" />
