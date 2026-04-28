@@ -16,7 +16,7 @@ import Gears from "@/components/gears";
 import { Footer } from "@/components/footer";
 import Header from "@/components/header";
 import AboutSection from "@/components/about";
-import OSS from "../components/oss";
+
 
 export default function Portfolio() {
   return (
@@ -64,7 +64,7 @@ export default function Portfolio() {
           <TechIcon />
         </div>
 
-        <OSS />
+      
         <EducationPage />
         <Gears />
 
