@@ -13,68 +13,58 @@ import { ProjectCard } from "@/components/project-card";
 import { TechIcon } from "@/components/tech-icon";
 import EducationPage from "@/components/education";
 import Gears from "@/components/gears";
-import {Footer} from "@/components/footer";
+import { Footer } from "@/components/footer";
 import Header from "@/components/header";
 import AboutSection from "@/components/about";
+import OSS from "../components/oss";
 
 export default function Portfolio() {
   return (
-    
     <div className="min-h-screen bg-white dark:bg-[#050505] text-zinc-700 dark:text-zinc-400 selection:bg-black dark:selection:bg-white selection:text-white dark:selection:text-black font-sans antialiased px-6 py-24 transition-colors duration-500">
-      
       <div className="max-w-2xl mx-auto pb-32">
+        <Header />
         
-      
-      <Header/>
-       
-        
+        <AboutSection />
 
+        <section className="py-12">
+          <h1 className="font-instrument text-3xl font-normal text-zinc-900 dark:text-white mb-8 tracking-tighter">
+            projects
+          </h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <ProjectCard 
+              title="Links Vault" 
+              description="A high-performance Second Brain for digital resources like links to store. Built with MongoDB for dynamic scaling and JWT for secure resource management."
+              image="/linkvault.png" 
+              github="https://github.com/OMEE-Y/secondbrain-link-vault-" 
+              live="https://secondbrain-link-vault.vercel.app/"
+              skills={[
+                { name: "Next.js" },
+                { name: "Tailwindcss" },
+                { name: "Express" },
+                { name: "Node.js" },
+                { name: "MongoDB" },
+                { name: "JWT" }
+              ]}
+            />
+            <ProjectCard 
+              title="Prompt Bazaar" 
+              description="Curated marketplace for production-grade AI prompts. Features advanced category filtering and instant copy-to-clipboard utility."
+              image="/prompt-bazaar.png"
+              github="https://github.com/OMEE-Y/prompt-bazaar"
+              live="https://prompt-bazaar.netlify.app"
+              skills={[
+                { name: "React.js" },
+                { name: "Tailwindcss" }
+              ]} 
+            />
+          </div>
+        </section>
 
-        
-    
-
-  <AboutSection/>
-
-
-      <section className="py-12">
-         <h1 className="font-instrument text-3xl font-weight:400 text-zinc-900 dark:text-white mb-2 tracking-tighter">
-  projects
-</h1>
- <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
- <ProjectCard 
-  title="Links Vault" 
-  description="A high-performance Second Brain for digital resources like links to store. Built with MongoDB for dynamic scaling and JWT for secure resource management."
-  image="/linkvault.png" 
-  github="https://github.com/OMEE-Y/secondbrain-link-vault-" 
-  live="https://secondbrain-link-vault.vercel.app/"
-  skills={[
-    { name: "Next.js" },
-     { name: "Tailwindcss"},
-    { name: "Express" },
-    {name : "Node.js"},
-    { name: "MongoDB" },
-    { name: "JWT" }
-  ]}
-/>
-
-  <ProjectCard 
-    title="Prompt Bazaar" 
-    description="Curated marketplace for production-grade AI prompts. Features advanced category filtering and instant copy-to-clipboard utility."
-    image="/prompt-bazaar.png"
-    github="https://github.com/OMEE-Y/prompt-bazaar"
-    live="https://prompt-bazaar.netlify.app"
-    skills={[
-    { name: "React.js" },
-    { name: "Tailwindcss"}
-  ]} />
-</div>
-</section>
-
-      
         <div className="pb-24">
           <TechIcon />
         </div>
 
+        <OSS />
         <EducationPage />
         <Gears />
 
@@ -92,8 +82,8 @@ export default function Portfolio() {
             <EnvelopeSimple size={20} weight="duotone" />
           </a>
         </nav>
-       
-<Footer />
+        
+        <Footer />
       </div>
     </div>
   );
