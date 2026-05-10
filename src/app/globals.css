@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* Define fonts here to use them as font-instrument and font-array */
+  
   --font-instrument: "Instrument Serif", serif;
   --font-array: "Inter", sans-serif;
 }
@@ -22,7 +22,7 @@
   }
 
   body {
-    /* Using Tailwind's @apply to use CSS variables easily */
+    
     @apply bg-[var(--background)] text-[var(--foreground)];
   }
 

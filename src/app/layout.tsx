@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
-import Script from "next/script";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -91,12 +91,8 @@ export default function RootLayout({
       
         
           {children}
-          <Script 
-          src="https://sleepie.uk/oneko.js" 
-          strategy="beforeInteractive" 
-          data-cat = "/black.gif"
         
-        />
+        
 
         <Analytics />
         <SpeedInsights/>
