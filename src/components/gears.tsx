@@ -29,7 +29,7 @@ return (
         {setup.map((item, index) => (
           <div 
             key={index}
-            className="group relative p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/20 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300"
+            className="group relative p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/20 hover:border-pink-300 dark:hover:border-pink-700 transition-all duration-300"
           >
             <div className="flex items-start justify-between">
               <div className="p-2 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-sm">

@@ -15,10 +15,10 @@ interface ProjectProps {
 }
 
 export const ProjectCard = ({ title, description, skills, github, live, image }: ProjectProps) => (
-  <div className="group relative flex flex-col h-full overflow-hidden rounded-3xl border border-dashed border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 transition-all duration-500 hover:border-solid hover:border-zinc-400 dark:hover:border-zinc-500 shadow-sm hover:shadow-lg dark:shadow-none">
+  <div className="group relative flex flex-col h-full overflow-hidden rounded-3xl border border-dashed border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 transition-all duration-500 hover:border-solid hover:border-pink-400 dark:hover:border-pink-500 shadow-sm hover:shadow-lg dark:shadow-none">
     
     {image && (
-      <div className="relative w-full aspect-video overflow-hidden shrink-0 border-b border-dashed border-zinc-200 dark:border-zinc-700 group-hover:border-zinc-400 dark:group-hover:border-zinc-500 transition-colors duration-500">
+      <div className="relative w-full aspect-video overflow-hidden shrink-0 border-b border-dashed border-zinc-200 dark:border-zinc-700 group-hover:border-pink-400 dark:group-hover:border-pink-500 transition-colors duration-500">
         <img 
           src={image} 
           alt={title}

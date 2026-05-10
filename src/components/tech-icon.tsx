@@ -3,51 +3,63 @@
 
 
 export const TechIcon = () => {
-  const techCategories = [
-    {
-      category: "Languages",
-      items: [
-        { icon: "devicon-java-plain", name: "Java" },
-        { icon: "devicon-javascript-plain colored", name: "JavaScript" },
-        { icon: "devicon-typescript-plain colored", name: "TypeScript" },
-      ],
-    },
-    {
-      category: "Web Development",
-      items: [
-        { icon: "devicon-react-original colored", name: "React" },
-        { icon: "devicon-nextjs-plain", name: "Next.js" },
-        { icon: "devicon-tailwindcss-plain", name: "Tailwind CSS" },
-        { icon: "devicon-nodejs-plain colored", name: "Node.js" },
-        { icon: "devicon-express-original", name: "Express" },
-      ],
-    },
-    {
-      category: "Database",
-      items: [
-        { icon: "devicon-mongodb-plain colored", name: "MongoDB" },
-        { icon: "devicon-mysql-plain colored", name: "MySQL" },
-      ],
-    },
-    {
-      category: "Tools",
-      items: [
-        { icon: "devicon-docker-plain colored", name: "Docker" },
-        { icon: "devicon-git-plain colored", name: "Git" },
-      ],
-    },
-    {
-      category: "Coding Ide",
-      items: [
-        { icon: "devicon-vscode-plain colored", name: "VSCode" },
-        { icon: "devicon-intellij-plain", name: "Intellij" },
-      ],
-    },
-    {
-      category: "Browser",
-      items: [{ icon: "devicon-chrome-plain", name: "Chrome" }],
-    },
-  ];
+const techCategories = [
+  {
+    category: "Languages",
+    items: [
+      { icon: "devicon-java-plain ", name: "Java" },
+      { icon: "devicon-javascript-plain colored", name: "JavaScript" },
+      { icon: "devicon-typescript-plain colored", name: "TypeScript" },
+    ],
+  },
+  {
+    category: "Frontend",
+    items: [
+      { icon: "devicon-react-original colored", name: "React" },
+      { icon: "devicon-nextjs-plain", name: "Next.js" },
+      { icon: "devicon-tailwindcss-plain colored", name: "Tailwind CSS" },
+    ],
+  },
+  {
+    category: "Backend",
+    items: [
+      { icon: "devicon-spring-original colored", name: "Spring Boot" }, 
+      { icon: "devicon-nodejs-plain colored", name: "Node.js" },
+      { icon: "devicon-express-original", name: "Express" },
+    ],
+  },
+  {
+    category: "Database & ORM",
+    items: [
+      { icon: "devicon-mongodb-plain colored", name: "MongoDB" },
+      { icon: "devicon-mysql-plain colored", name: "MySQL" },
+      { icon: "devicon-prisma-original", name: "Prisma" }, 
+    ],
+  },
+  {
+    category: "Tools & Source Control",
+    items: [
+      { icon: "devicon-git-plain colored", name: "Git" },
+      { icon: "devicon-github-original", name: "GitHub" },
+       { icon: "devicon-docker-plain colored", name: "Docker" },
+    ],
+  },
+  {
+    category: "Deployment",
+    items: [
+      { icon: "devicon-vercel-original", name: "Vercel" },
+      { icon: "devicon-netlify-plain colored", name: "Netlify" }
+    ],
+  },
+  {
+    category: "Editors & Browser",
+    items: [
+      { icon: "devicon-vscode-plain colored", name: "VSCode" },
+      { icon: "devicon-intellij-plain ", name: "IntelliJ" },
+      { icon: "devicon-chrome-plain ", name: "Chrome" },
+    ],
+  },
+];
 
   return (
     
@@ -79,8 +91,7 @@ export const TechIcon = () => {
 
                   shadow-sm
                   transition-all duration-200
-
-                  hover:bg-neutral-100 dark:hover:bg-white/10
+                  hover:border-pink-200 dark:hover:border-pink-800
                   hover:-translate-y-[1px]
                   hover:shadow-md
 
@@ -105,4 +116,4 @@ export const TechIcon = () => {
       ))}
     </div>
   );
-};
+}; 

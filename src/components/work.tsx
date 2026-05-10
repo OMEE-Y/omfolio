@@ -50,7 +50,7 @@ export default function WorkPage() {
           return (
             <div
               key={index}
-              className="group rounded-2xl border border-zinc-100 dark:border-zinc-900/50 bg-white dark:bg-zinc-900/10 p-4 transition-all duration-300 hover:border-zinc-200 dark:hover:border-zinc-800 hover:bg-zinc-50/50 dark:hover:bg-zinc-900/30 cursor-pointer"
+              className="group rounded-2xl border border-zinc-100 dark:border-zinc-900/50 bg-white dark:bg-zinc-900/10 p-4 transition-all duration-300 hover:border-pink-200 dark:hover:border-pink-800 hover:bg-zinc-50/50 dark:hover:bg-zinc-900/30 cursor-pointer"
               onClick={() => toggleExpand(index)}
               role="button"
               tabIndex={0}
@@ -62,7 +62,7 @@ export default function WorkPage() {
               }}
               aria-expanded={isExpanded}
             >
-              {/* Responsive container: stacks on mobile, side-by-side on tablet/desktop */}
+           
               <div className="flex flex-row items-start justify-between gap-3 sm:gap-4">
                 <div className="flex items-start gap-3 sm:gap-4 min-w-0">
                   <div className="relative w-10 h-10 sm:w-12 sm:h-12 shrink-0 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800/80 flex items-center justify-center overflow-hidden">

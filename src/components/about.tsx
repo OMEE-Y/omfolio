@@ -11,9 +11,7 @@ export default function AboutSection() {
 </h1>
       <div className="space-y-5 text-[15.5px] sm:text-[16px] leading-7 sm:leading-8 max-w-2xl text-zinc-700 dark:text-zinc-300">
   <p>
-    Hey, I'm Om Yewale, a full stack developer who loves building clean, modern
-    websites and apps where design, functionality, and even the smallest
-    details matter.
+   I'm <strong>Om Yewale</strong> a developer living in Mumbai, India. I love to code and make (break) things.
   </p>
 
   <p>
@@ -22,12 +20,12 @@ export default function AboutSection() {
   </p>
 
   <p>
-    My main tech stack is <strong>Next.js</strong> with <strong>Tailwind CSS</strong> for styling,
+    My main tech stack is <strong>Next.js</strong> for frontend  with <strong>Tailwind CSS</strong> for styling,
    For  backend  <strong>Express.js</strong>, and databases like <strong>MongoDB</strong> or <strong>MySQL</strong>.
   </p>
 
   <p>
-          In my free time, I learn <strong>Python</strong> and read some books          or tech blogs
+          In my free time, I learn about <strong>Java</strong> ecosystem for mastering <strong>Spring Boot</strong> and read some books or tech blogs
         </p>
 </div>
     </div>

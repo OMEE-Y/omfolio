@@ -47,7 +47,7 @@ export default function EducationPage() {
           return (
             <div 
               key={index} 
-              className="group rounded-2xl border border-zinc-100 dark:border-zinc-900/50 bg-white dark:bg-zinc-900/10 p-4 transition-all duration-300 hover:border-zinc-200 dark:hover:border-zinc-800 hover:bg-zinc-50/50 dark:hover:bg-zinc-900/30 cursor-pointer"
+              className="group rounded-2xl border border-zinc-100 dark:border-zinc-900/50 bg-white dark:bg-zinc-900/10 p-4 transition-all duration-300 hover:border-pink-200 dark:hover:border-pink-800 hover:bg-zinc-50/50 dark:hover:bg-zinc-900/30 cursor-pointer"
               onClick={() => toggleExpand(index)}
               role="button"
               tabIndex={0}
