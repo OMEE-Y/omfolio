@@ -1,13 +1,24 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { X } from "@phosphor-icons/react";
+
+function calculateAge(dateOfBirth: string) {
+  const birth = new Date(dateOfBirth);
+  const today = new Date();
+
+  const hasBirthdayPassed =
+    today.getMonth() > birth.getMonth() ||
+    (today.getMonth() === birth.getMonth() &&
+      today.getDate() >= birth.getDate());
+
+  return today.getFullYear() - birth.getFullYear() - (hasBirthdayPassed ? 0 : 1);
+}
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
-
-  
+  const age = useMemo(() => calculateAge("2006-11-25"), []);
 
   return (
     <>
@@ -16,12 +27,15 @@ export default function Header() {
           <h1 className="font-instrument text-4xl font-normal text-zinc-900 dark:text-white mb-2 tracking-tighter">
             Om Yewale
           </h1>
-<p className="text-sm text-black/70 dark:text-white/70 -mt-0.5 font-medium ml-0.5">Software Engineer</p>
+
+          <p className="text-sm text-black/70 dark:text-white/70 -mt-0.5 font-medium ml-0.5">
+            {age} y/o • full-stack engineer
+          </p>
         </div>
 
         <div
           onClick={() => setOpen(true)}
-          className="w-20 h-20 rounded-xl overflow-hidden border border-zinc-200 dark:border-white/10 bg-zinc-100 dark:bg-zinc-900 cursor-grabbing group"
+          className="w-20 h-20 rounded-xl overflow-hidden border border-zinc-200 dark:border-white/10 bg-zinc-100 dark:bg-zinc-900 cursor-pointer group"
         >
           <img
             src="/pfp.png"
@@ -39,11 +53,11 @@ export default function Header() {
           >
             <X size={22} weight="bold" />
           </button>
-          
+
           <img
             src="/pfp.png"
             alt="Om Yewale"
-            
+            className="max-w-full max-h-[85vh] rounded-2xl object-contain shadow-2xl"
           />
         </div>
       )}
