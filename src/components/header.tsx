@@ -16,7 +16,7 @@ export default function Header() {
           <h1 className="font-instrument text-4xl font-normal text-zinc-900 dark:text-white mb-2 tracking-tighter">
             Om Yewale
           </h1>
-
+<p className="text-sm text-black/70 dark:text-white/70 -mt-0.5 font-medium ml-0.5">Software Engineer</p>
         </div>
 
         <div
