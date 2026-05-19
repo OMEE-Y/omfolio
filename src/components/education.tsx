@@ -20,7 +20,7 @@ const educationData: EducationItem[] = [
       "Learnt Data Structures & Algorithms, Operating Systems, and Computer Networks.",
       "Deep dived into Core Java and OOP principles through practical implementations.",
     ],
-    logo: "/vit-logo-dark.png",
+    logo: "/vitlogo.png",
   },
 ];
 
@@ -64,11 +64,11 @@ export default function EducationPage() {
           
                   <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-zinc-100 bg-zinc-50 dark:border-zinc-800/80 dark:bg-zinc-900 sm:h-12 sm:w-12">
                     {hasLogo ? (
-                      <img
-                        src={item.logo}
-                        alt={`${item.institute} logo`}
-                        className="h-full w-full object-contain p-1.5 transition-all duration-300 dark:invert dark:brightness-125 dark:contrast-125"
-                      />
+                    <img
+      src={item.logo}
+      alt={`${item.institute} logo`}
+      className="max-h-full max-w-full object-contain transition-all "
+    />
                     ) : (
                       <GraduationCap
                         size={20}

@@ -16,7 +16,7 @@ import Gears from "@/components/gears";
 import { Footer } from "@/components/footer";
 import Header from "@/components/header";
 import AboutSection from "@/components/about";
-import WorkPage from "@/components/work";
+
 
 export default function Portfolio() {
   const stripeStyle = {
@@ -50,7 +50,7 @@ export default function Portfolio() {
         <AboutSection />
 
     
-        <WorkPage />
+      
 
    
         <section className="py-12">
