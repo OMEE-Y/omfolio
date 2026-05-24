@@ -16,6 +16,7 @@ import Gears from "@/components/gears";
 import { Footer } from "@/components/footer";
 import Header from "@/components/header";
 import AboutSection from "@/components/about";
+import OpenSource from "@/components/opensource";
 
 
 export default function Portfolio() {
@@ -88,10 +89,12 @@ export default function Portfolio() {
             />
           </div>
         </section>
+            <OpenSource/>
 
         <section className="pb-16">
           <TechIcon />
         </section>
+    
 
     
         <EducationPage />
