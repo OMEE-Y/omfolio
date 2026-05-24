@@ -76,14 +76,13 @@ export default function OpenSource() {
   return (
     <section className="min-h-0 pb-24">
       <div className="flex min-h-0 flex-col gap-y-5">
-        {/* heading */}
+  
         <div>
-           <h1 className="font-instrument text-3xl font-weight:400 text-zinc-900 dark:text-white mb-2 tracking-tighter">
-  open source
-</h1>
+          <h1 className="font-instrument text-3xl font-[400] text-zinc-900 dark:text-white mb-2 tracking-tighter">
+            open source
+          </h1>
         </div>
 
-        {/* content */}
         <div>
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             {loading
@@ -99,10 +98,9 @@ export default function OpenSource() {
 
                     {i !== 5 && (
                       <>
-                        {/* desktop separator */}
+                    
                         <div className="hidden md:block h-14 w-px bg-gradient-to-b from-transparent via-zinc-200 to-transparent dark:via-zinc-800" />
 
-                        {/* mobile separator */}
                         <div className="block md:hidden h-px w-full bg-gradient-to-r from-transparent via-zinc-200 to-transparent dark:via-zinc-800" />
                       </>
                     )}
@@ -117,13 +115,8 @@ export default function OpenSource() {
 
                   return (
                     <React.Fragment key={pr.repository}>
-                      {/* item */}
-                      <div className="group relative flex flex-1 flex-col gap-2 overflow-hidden rounded-xl px-4 py-5 transition-all duration-300 hover:bg-zinc-50 dark:hover:bg-zinc-900/50">
-                        {/* subtle hover glow */}
-                        <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                          <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent dark:from-white/[0.03]" />
-                        </div>
-
+                    
+                      <div className="group relative flex flex-1 flex-col gap-2 overflow-hidden rounded-xl px-4 py-5 transition-all duration-300">
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
@@ -140,37 +133,29 @@ export default function OpenSource() {
                                 rounded-full
                                 border border-black/10 dark:border-white/10
                                 object-contain
-                                opacity-80
-                                grayscale
-                                brightness-75
-                                contrast-125
+                                opacity-100
                                 shadow-lg
                                 transition-all duration-300
                                 group-hover:scale-105
-                                group-hover:opacity-100
-                                group-hover:grayscale-0
-                                group-hover:brightness-100
                                 group-hover:shadow-xl
                                 group-hover:shadow-black/10
                               "
                             />
-
-                            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                           </div>
 
-                          <span className="max-w-[90px] text-center text-xs font-semibold text-zinc-400 transition-colors duration-300 group-hover:text-zinc-600 dark:group-hover:text-zinc-300">
+                          <span className="max-w-[90px] text-center text-xs font-semibold text-zinc-500 dark:text-zinc-400">
                             {label}
                           </span>
                         </a>
                       </div>
 
-                      {/* separator */}
+               
                       {index !== prs.length - 1 && (
                         <>
-                          {/* desktop */}
+                      
                           <div className="hidden md:block h-14 w-px shrink-0 bg-gradient-to-b from-transparent via-zinc-200 to-transparent dark:via-zinc-800" />
 
-                          {/* mobile */}
+                    
                           <div className="block md:hidden h-px w-full bg-gradient-to-r from-transparent via-zinc-200 to-transparent dark:via-zinc-800" />
                         </>
                       )}
