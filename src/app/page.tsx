@@ -115,7 +115,7 @@ export default function Portfolio() {
 
         <NavItem
           icon={LinkedinLogo}
-          href="https://www.linkedin.com/in/om-yewale-744905328"
+          href="https://www.linkedin.com/in/omyewalelinks"
         />
 
         <NavItem
