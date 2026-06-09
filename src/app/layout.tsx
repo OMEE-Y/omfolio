@@ -4,7 +4,6 @@ import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -17,10 +16,30 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Om Yewale",
-    
+  description: "Om Yewale is a Full Stack Developer based in Mumbai specializing in Next.js, T3 Stack, MERN/PERN, Java Spring Boot, Agentic AI, Data Science, and Web3 development. Building production-grade web applications and autonomous tools.",
+  keywords: [
+    "Om Yewale", 
+    "Full Stack Developer Mumbai", 
+    "Software Engineer", 
+    "Next.js Developer", 
+    "Agentic AI", 
+    "Machine Learning",
+    "T3 Stack", 
+    "MERN Stack", 
+    "PERN Stack", 
+    "Java Backend Developer", 
+    "Spring Boot", 
+    "Data Science", 
+    "Web3 Developer", 
+    "DevOps Engineer", 
+    "React TypeScript", 
+    "Autonomous Tools",
+    "Mumbai",
+    "India",
+    "Student",
 
-  description: "Full stack developer based in Mumbai specializing in Next.js, DevOps, and Agentic AI. Building production-grade web interfaces and autonomous tools.",
-  keywords: ["Om Yewale", "Full Stack Developer", "Mumbai", "Software Engineer", "Next.js", "Agentic AI", "DevOps"],
+    
+  ],
   authors: [{ name: "Om Yewale", url: "https://omeey.vercel.app" }],
   creator: "Om Yewale",
   metadataBase: new URL("https://omeey.vercel.app"), 
@@ -31,24 +50,17 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://omeey.vercel.app",
-    title: "Om Yewale | Full Stack Engineer",
-    description: "Engineering student building the future of agentic web tools and production-grade interfaces.",
-    siteName: "Om Yewale",
+    title: "Om Yewale | Full Stack Engineer & AI Architect",
+    description: "Full-stack engineer and engineering student building the future of agentic web tools, MERN/PERN applications, Java backends, and decentralized Web3 platforms.",
+    siteName: "Om Yewale Portfolio",
     images: [
       {
         url: "/opengraph.png", 
         width: 1200,
         height: 630,
-        alt: "Om Yewale Portfolio Preview",
+       
       },
     ],
-  },
-  twitter: {
-    card: "summary_large_image", 
-    title: "Om Yewale (@omee_y)",
-    description: "Full Stack Developer & Engineering Student in Mumbai.",
-    creator: "@omee_y",
-    images: ["/opengraph.png"],
   },
   robots: {
     index: true,
@@ -64,7 +76,6 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
-    
     ],
     apple: [
       { url: "/apple-touch-icon.png", sizes: "180x180" },
@@ -72,6 +83,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
 };
+
 export default function RootLayout({
   children,
 }: {
@@ -80,23 +92,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        
         <link 
           rel="stylesheet" 
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" 
         />
-        
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      
-        
-          {children}
-        
-        
-
+        {children}
         <Analytics />
         <SpeedInsights/>
- </body>
+      </body>
     </html>
   );
-} 
+}
