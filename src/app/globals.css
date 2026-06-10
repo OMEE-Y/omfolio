@@ -26,7 +26,5 @@
     @apply bg-[var(--background)] text-[var(--foreground)];
   }
 
-  #oneko {
-    pointer-events: none;
-  }
+  
 }
