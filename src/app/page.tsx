@@ -76,17 +76,7 @@ export default function Portfolio() {
               ]}
             />
 
-            <ProjectCard
-              title="Prompt Bazaar"
-              description="Curated marketplace for production-grade AI prompts. Features advanced category filtering and instant copy-to-clipboard utility."
-              image="/prompt-bazaar.png"
-              github="https://github.com/OMEE-Y/prompt-bazaar"
-              live="https://prompt-bazaar.netlify.app"
-              skills={[
-                { name: "React.js" },
-                { name: "Tailwindcss" },
-              ]}
-            />
+           
           </div>
         </section>
         
