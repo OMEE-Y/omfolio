@@ -50,8 +50,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://omeey.vercel.app",
-    title: "Om Yewale | Full Stack Engineer & AI Architect",
-    description: "Full-stack engineer and engineering student building the future of agentic web tools, MERN/PERN applications, Java backends, and decentralized Web3 platforms.",
+    title: "Om Yewale",
+    description: "Full-stack engineer and engineering student building the future of agentic web tools, MERN/PERN applications, Java backends",
     siteName: "Om Yewale Portfolio",
     images: [
       {
