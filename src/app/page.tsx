@@ -12,12 +12,10 @@ import { NavItem } from "@/components/nav-item";
 import { ProjectCard } from "@/components/project-card";
 import { TechIcon } from "@/components/tech-icon";
 import EducationPage from "@/components/education";
-import Gears from "@/components/gears";
+
 import { Footer } from "@/components/footer";
 import Header from "@/components/header";
 import AboutSection from "@/components/about";
-
-
 
 export default function Portfolio() {
   const stripeStyle = {
@@ -26,11 +24,12 @@ export default function Portfolio() {
   };
 
   return (
+  
     <div
-      className="relative min-h-screen bg-white dark:bg-[#050505] text-zinc-700 dark:text-zinc-400 selection:bg-black dark:selection:bg-white selection:text-white dark:selection:text-black font-sans antialiased px-6 py-24 transition-colors duration-500"
+      className="relative min-h-screen flex flex-col bg-white dark:bg-[#050505] text-zinc-700 dark:text-zinc-400 selection:bg-black dark:selection:bg-white selection:text-white dark:selection:text-black font-sans antialiased transition-colors duration-500"
       style={{ scrollbarGutter: "stable" }}
     >
-     
+      
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div
           className="hidden md:block absolute left-0 top-0 bottom-0 w-[60px] dark:opacity-[0.15] opacity-[0.2] border-r border-dashed dark:border-[#eee] border-[#000]/70"
@@ -43,17 +42,12 @@ export default function Portfolio() {
         />
       </div>
 
-      <div className="relative z-10 max-w-2xl mx-auto pb-32">
-     
+      
+      <main className="relative z-10 flex-1 w-full max-w-2xl mx-auto px-6 pt-24 pb-12">
         <Header />
 
-      
         <AboutSection />
 
-    
-      
-
-   
         <section className="py-12">
           <h1 className="font-instrument text-3xl font-normal text-zinc-900 dark:text-white mb-8 tracking-tighter">
             projects
@@ -75,27 +69,20 @@ export default function Portfolio() {
                 { name: "JWT" },
               ]}
             />
-
-           
           </div>
         </section>
         
-
         <section className="pb-16">
           <TechIcon />
         </section>
     
-
-    
         <EducationPage />
+      </main>
 
-   
-        <Gears />
+      {/* 3. Moved Footer here (outside the main content block) so it handles its own full-width structure */}
+      <Footer />
 
-        <Footer />
-      </div>
-
-
+      {/* Navigation */}
       <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-white/70 dark:bg-[#0a0a0a]/70 backdrop-blur-md border border-zinc-200/80 dark:border-white/10 px-2 py-1.5 rounded-xl flex items-center gap-1 shadow-lg z-50">
         <NavItem icon={House} href="/" external={false} />
 
