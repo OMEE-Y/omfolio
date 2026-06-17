@@ -69,6 +69,16 @@ export default function Portfolio() {
                 { name: "JWT" },
               ]}
             />
+            <ProjectCard
+  title="Wallhavencli"
+  description="A CLI tool to fetch and download high-quality wallpapers from wallhaven.cc directly from your terminal."
+  image="" 
+  github="https://github.com/OMEE-Y/wallhavencli"
+  live=""
+  skills={[
+    { name: "Java" },
+  ]}
+/>
           </div>
         </section>
         
@@ -79,10 +89,10 @@ export default function Portfolio() {
         <EducationPage />
       </main>
 
-      {/* 3. Moved Footer here (outside the main content block) so it handles its own full-width structure */}
+     
       <Footer />
 
-      {/* Navigation */}
+
       <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-white/70 dark:bg-[#0a0a0a]/70 backdrop-blur-md border border-zinc-200/80 dark:border-white/10 px-2 py-1.5 rounded-xl flex items-center gap-1 shadow-lg z-50">
         <NavItem icon={House} href="/" external={false} />
 
