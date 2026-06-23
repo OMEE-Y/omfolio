@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { GraduationCap } from "@phosphor-icons/react/dist/ssr";
+import { GraduationCap } from "@phosphor-icons/react";
+import Image from "next/image";
 
 type EducationItem = {
   institute: string;
@@ -57,45 +58,40 @@ export default function EducationPage() {
               }}
               aria-expanded={isExpanded}
             >
-           
               <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-start sm:gap-4">
-                
                 <div className="flex min-w-0 flex-1 items-start gap-3 sm:gap-4">
-          
                   <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-zinc-100 bg-zinc-50 dark:border-zinc-800/80 dark:bg-zinc-900 sm:h-12 sm:w-12">
                     {hasLogo ? (
-                    <img
-      src={item.logo}
-      alt={`${item.institute} logo`}
-      className="max-h-full max-w-full object-contain transition-all "
-    />
-                    ) : (
-                      <GraduationCap
-                        size={20}
-                        weight="duotone"
-                        className="text-zinc-500 dark:text-zinc-400 sm:scale-110"
-                      />
-                    )}
+ <Image
+  src={item.logo!}
+  alt={`${item.institute} logo`}
+  width={48}
+  height={48}
+  className="object-contain"
+/>
+) : (
+  <GraduationCap
+    size={20}
+    weight="duotone"
+    className="text-zinc-500 dark:text-zinc-400 sm:scale-110"
+  />
+)}
+                  
                   </div>
 
-             
                   <div className="min-w-0 flex-1 space-y-1">
-                    
-                    
                     <div className="w-full min-w-0">
                       <h3 className="break-words text-[13px] font-semibold leading-snug text-zinc-900 dark:text-zinc-100 sm:text-[14px]">
                         {item.institute}
                       </h3>
                     </div>
 
-                
                     <p className="text-[12px] font-medium leading-normal text-zinc-500 dark:text-zinc-400 sm:text-[13px]">
                       {item.degree}
                     </p>
                   </div>
                 </div>
 
-             
                 <div className="mt-1 flex shrink-0 items-center justify-between gap-1.5 pl-[52px] pt-1 sm:mt-0 sm:justify-end sm:gap-2.5 sm:pl-0 sm:pt-0.5">
                   <span className="tabular-nums text-[10px] font-semibold uppercase tracking-wide text-zinc-400 dark:text-zinc-500 sm:text-[11px]">
                     {item.duration}
@@ -114,13 +110,13 @@ export default function EducationPage() {
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
+                      pathLength={undefined}
                       d="M19 9l-7 7-7-7"
                     />
                   </svg>
                 </div>
               </div>
 
-            
               <div
                 className={`grid transition-all duration-300 ease-out ${
                   isExpanded
@@ -136,7 +132,6 @@ export default function EducationPage() {
                         className="relative flex items-start gap-2.5"
                       >
                         <span className="absolute -left-[41px] top-[7px] h-1.5 w-1.5 rounded-full bg-zinc-300 ring-4 ring-white dark:bg-zinc-700 dark:ring-zinc-950 sm:-left-[45px]" />
-
                         <p className="text-[12.5px] leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-[13px]">
                           {point}
                         </p>
