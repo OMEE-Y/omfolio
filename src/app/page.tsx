@@ -16,6 +16,7 @@ import EducationPage from "@/components/education";
 import { Footer } from "@/components/footer";
 import Header from "@/components/header";
 import AboutSection from "@/components/about";
+import OSSSection from "@/components/oss";
 
 export default function Portfolio() {
   const stripeStyle = {
@@ -85,6 +86,10 @@ export default function Portfolio() {
         <section className="pb-16">
           <TechIcon />
         </section>
+         <section className="pb-16">
+          <OSSSection/>
+        </section>
+    
     
         <EducationPage />
       </main>
