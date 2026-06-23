@@ -17,6 +17,7 @@ import { Footer } from "@/components/footer";
 import Header from "@/components/header";
 import AboutSection from "@/components/about";
 import OSSSection from "@/components/oss";
+import ThemeToggle from "@/components/toggle";
 
 export default function Portfolio() {
   const stripeStyle = {
@@ -25,7 +26,6 @@ export default function Portfolio() {
   };
 
   return (
-  
     <div
       className="relative min-h-screen flex flex-col bg-white dark:bg-[#050505] text-zinc-700 dark:text-zinc-400 selection:bg-black dark:selection:bg-white selection:text-white dark:selection:text-black font-sans antialiased transition-colors duration-500"
       style={{ scrollbarGutter: "stable" }}
@@ -71,15 +71,15 @@ export default function Portfolio() {
               ]}
             />
             <ProjectCard
-  title="Wallhavencli"
-  description="A CLI tool to fetch and download high-quality wallpapers from wallhaven.cc directly from your terminal."
-  image="" 
-  github="https://github.com/OMEE-Y/wallhavencli"
-  live=""
-  skills={[
-    { name: "Java" },
-  ]}
-/>
+              title="Wallhavencli"
+              description="A CLI tool to fetch and download high-quality wallpapers from wallhaven.cc directly from your terminal."
+              image="" 
+              github="https://github.com/OMEE-Y/wallhavencli"
+              live=""
+              skills={[
+                { name: "Java" },
+              ]}
+            />
           </div>
         </section>
         
@@ -114,8 +114,8 @@ export default function Portfolio() {
           icon={TwitterLogo}
           href="https://x.com/omee_y"
         />
-
-        <div className="w-px h-4 bg-zinc-200/80 dark:bg-white/10 mx-1" />
+        
+       
 
         <a
           href="mailto:yewaleom394@gmail.com"
@@ -123,6 +123,10 @@ export default function Portfolio() {
         >
           <EnvelopeSimple size={20} weight="duotone" />
         </a>
+
+        <div className="w-px h-4 bg-zinc-200/80 dark:bg-white/10 mx-1" />
+
+        <ThemeToggle />
       </nav>
     </div>
   );

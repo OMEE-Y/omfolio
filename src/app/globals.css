@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 @import "tailwindcss";
 
+/* Enable dark: variants using the .dark class */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  
   --font-instrument: "Instrument Serif", serif;
   --font-array: "Inter", sans-serif;
 }
@@ -12,19 +15,30 @@
   :root {
     --background: #ffffff;
     --foreground: #000000;
+
     color-scheme: light;
   }
 
   .dark {
     --background: #09090b;
     --foreground: #ffffff;
+
     color-scheme: dark;
   }
 
-  body {
-    
-    @apply bg-[var(--background)] text-[var(--foreground)];
+  html {
+    scroll-behavior: smooth;
   }
 
-  
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)];
+    font-family: var(--font-array);
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
 }
