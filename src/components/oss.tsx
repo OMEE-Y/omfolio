@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { GithubLogo, GitMerge } from "@phosphor-icons/react";
+import { GithubLogo, GitMerge, ArrowUpRight } from "@phosphor-icons/react";
 
 interface GitHubPRItem {
   id: number;
@@ -11,7 +11,6 @@ interface GitHubPRItem {
   repository_url: string;
   closed_at: string;
 }
-
 
 export default function OSSSection() {
   const username = "OMEE-Y";
@@ -55,7 +54,7 @@ export default function OSSSection() {
   };
 
   return (
-    <section className="mt-16 mb-24 w-full mx-auto px-4 md:px-0 max-w-xl">
+    <section className="mt-16 mb-24 w-full mx-auto px-4 sm:px-6 md:px-0 max-w-xl h-auto overflow-visible">
       <div className="space-y-1 mb-8">
         <h2 className="font-instrument text-3xl font-normal tracking-tight text-zinc-900 dark:text-zinc-100">
           open source
@@ -74,7 +73,7 @@ export default function OSSSection() {
       )}
 
       {!loading && !error && (
-        <div className="space-y-3">
+        <div className="flex flex-col gap-3 h-auto overflow-visible">
           {mergedPRs.map((pr) => {
             const repo = getRepoName(pr.repository_url);
             const orgName = getOrgName(pr.repository_url);
@@ -89,8 +88,6 @@ export default function OSSSection() {
                 className="group block rounded-xl border border-zinc-100 bg-white p-4 transition-all duration-200 hover:border-pink-200 hover:bg-zinc-50/30 dark:border-zinc-900/50 dark:bg-zinc-900/10 dark:hover:border-pink-900/40 dark:hover:bg-zinc-900/20"
               >
                 <div className="flex items-start gap-4">
-                  
-              
                   <div className="relative shrink-0 mt-0.5">
                     <img
                       src={orgAvatarUrl}
@@ -106,10 +103,9 @@ export default function OSSSection() {
                     </div>
                   </div>
 
-           
                   <div className="min-w-0 flex-1 space-y-1.5">
-                    <div className="flex items-start justify-between gap-2">
-                      <h3 className="text-[13px] font-medium leading-snug text-zinc-900 dark:text-zinc-100 group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors line-clamp-1">
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-2">
+                      <h3 className="text-[13px] font-medium leading-snug text-zinc-900 dark:text-zinc-100 group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors line-clamp-2 sm:line-clamp-1">
                         {pr.title}
                       </h3>
                       <span className="shrink-0 tabular-nums text-[10px] uppercase font-medium tracking-wide text-zinc-400 dark:text-zinc-500 pt-0.5">
@@ -118,15 +114,15 @@ export default function OSSSection() {
                     </div>
 
                     {pr.body && (
-                      <p className="text-[11.5px] leading-relaxed text-zinc-500 dark:text-zinc-400 line-clamp-2">
+                      <p className="text-[11.5px] leading-relaxed text-zinc-500 dark:text-zinc-400 line-clamp-2 break-words">
                         {pr.body.replace(/[#*`_-]/g, "")}
                       </p>
                     )}
 
                     <div className="pt-1 flex items-center gap-2">
-                      <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md border border-zinc-100 bg-zinc-50 dark:border-zinc-800/60 dark:bg-zinc-950 text-[10.5px] font-mono text-zinc-600 dark:text-zinc-400">
-                        <GithubLogo size={12} className="opacity-70" />
-                        <span>{repo}</span>
+                      <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md border border-zinc-100 bg-zinc-50 dark:border-zinc-800/60 dark:bg-zinc-950 text-[10.5px] font-mono text-zinc-600 dark:text-zinc-400 max-w-full">
+                        <GithubLogo size={12} className="opacity-70 shrink-0" />
+                        <span className="truncate">{repo}</span>
                       </div>
                     </div>
                   </div>
@@ -134,6 +130,23 @@ export default function OSSSection() {
               </a>
             );
           })}
+
+          {mergedPRs.length > 0 && (
+            <div className="pt-2 flex justify-start">
+              <a
+                href="https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3AOMEE-Y&type=pullrequests"
+                target="_blank"
+                rel="noreferrer"
+                className="group/btn inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 hover:bg-zinc-100 dark:bg-zinc-900/30 dark:hover:bg-zinc-900/60 text-[11px] font-mono text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-all duration-200 shadow-sm"
+              >
+                <span>view all contributions</span>
+                <ArrowUpRight 
+                  size={12} 
+                  className="text-zinc-400 dark:text-zinc-500 group-hover/btn:text-zinc-700 dark:group-hover/btn:text-zinc-300 transition-transform duration-200 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" 
+                />
+              </a>
+            </div>
+          )}
         </div>
       )}
     </section>
