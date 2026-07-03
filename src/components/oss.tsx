@@ -23,7 +23,7 @@ export default function OSSSection() {
       try {
         const query = encodeURIComponent(`type:pr is:merged author:${username}`);
         const res = await fetch(
-          `https://api.github.com/search/issues?q=${query}&sort=updated&per_page=6`
+          `https://api.github.com/search/issues?q=${query}&sort=updated&per_page=8`
         );
 
         if (!res.ok) throw new Error();
