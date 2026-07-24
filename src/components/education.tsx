@@ -8,7 +8,7 @@ type EducationItem = {
   institute: string;
   degree: string;
   duration: string;
-  description: string[];
+  description?: string[];
   logo?: string;
 };
 
@@ -17,11 +17,13 @@ const educationData: EducationItem[] = [
     institute: "Vidyalankar Institute of Technology, Mumbai",
     degree: "B.Tech in Information Technology",
     duration: "2024 - 2028",
-    description: [
-      "Learnt Data Structures & Algorithms, Operating Systems, and Computer Networks.",
-      "Deep dived into Core Java and OOP principles through practical implementations.",
-    ],
     logo: "/vitlogo.png",
+   description: [
+  "opted for a minor in ai to explore the field beyond the basics",
+  "built a strong foundation in cs fundamentals",
+  "got interested in java here and started exploring backend development",
+  
+],
   },
 ];
 
@@ -62,21 +64,20 @@ export default function EducationPage() {
                 <div className="flex min-w-0 flex-1 items-start gap-3 sm:gap-4">
                   <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-zinc-100 bg-zinc-50 dark:border-zinc-800/80 dark:bg-zinc-900 sm:h-12 sm:w-12">
                     {hasLogo ? (
- <Image
-  src={item.logo!}
-  alt={`${item.institute} logo`}
-  width={48}
-  height={48}
-  className="object-contain"
-/>
-) : (
-  <GraduationCap
-    size={20}
-    weight="duotone"
-    className="text-zinc-500 dark:text-zinc-400 sm:scale-110"
-  />
-)}
-                  
+                      <Image
+                        src={item.logo!}
+                        alt={`${item.institute} logo`}
+                        width={48}
+                        height={48}
+                        className="object-contain"
+                      />
+                    ) : (
+                      <GraduationCap
+                        size={20}
+                        weight="duotone"
+                        className="text-zinc-500 dark:text-zinc-400 sm:scale-110"
+                      />
+                    )}
                   </div>
 
                   <div className="min-w-0 flex-1 space-y-1">
@@ -110,36 +111,22 @@ export default function EducationPage() {
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      pathLength={undefined}
                       d="M19 9l-7 7-7-7"
                     />
                   </svg>
                 </div>
               </div>
 
-              <div
-                className={`grid transition-all duration-300 ease-out ${
-                  isExpanded
-                    ? "mt-4 grid-rows-[1fr] opacity-100"
-                    : "grid-rows-[0fr] opacity-0"
-                }`}
-              >
-                <div className="overflow-hidden">
-                  <div className="ml-[19px] space-y-3 border-l border-zinc-100 pb-2 pl-9 pr-2 dark:border-zinc-800/60 sm:ml-6 sm:pl-[64px]">
-                    {item.description.map((point, i) => (
-                      <div
-                        key={i}
-                        className="relative flex items-start gap-2.5"
-                      >
-                        <span className="absolute -left-[41px] top-[7px] h-1.5 w-1.5 rounded-full bg-zinc-300 ring-4 ring-white dark:bg-zinc-700 dark:ring-zinc-950 sm:-left-[45px]" />
-                        <p className="text-[12.5px] leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-[13px]">
-                          {point}
-                        </p>
-                      </div>
+             
+              {isExpanded && item.description && item.description.length > 0 && (
+                <div className="mt-4 border-t border-zinc-100 pt-3 dark:border-zinc-800/60">
+                  <ul className="list-disc space-y-1 pl-5 text-[12px] text-zinc-600 dark:text-zinc-400 sm:text-[13px]">
+                    {item.description.map((point, idx) => (
+                      <li key={idx}>{point}</li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
-              </div>
+              )}
             </div>
           );
         })}

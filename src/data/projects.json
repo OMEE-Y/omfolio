@@ -37,7 +37,7 @@
         "description": "A command-line tool that automatically adds Dodo Payments setup into Next.js, Express, or Better-Auth projects.",
         "image": "/setupdodo.jpg",
         "github": "https://github.com/OMEE-Y/setup-dodo",
-        "live": "",
+        "live": "https://www.npmjs.com/package/setup-dodo",
         "skills": [
           { "name": "Javascript" }
         ]
