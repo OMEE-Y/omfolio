@@ -11,13 +11,13 @@ export default function AboutSection() {
 </h1>
       <div className="space-y-5 text-[15.5px] sm:text-[16px] leading-7 sm:leading-8 max-w-2xl text-zinc-700 dark:text-zinc-300">
   <p>
-   I'm <strong>Om Yewale</strong> a developer living in Mumbai, India. I love to code and make (break) things.
+   I'm <strong>Om Yewale</strong> a developer living in Mumbai, India
   </p>
 
 
   <p>
     My main tech stack is <strong>Next.js</strong> for frontend  with <strong>Tailwind CSS</strong> for styling,
-   For  backend  <strong>Express.js</strong>, and databases like <strong>MongoDB</strong> or <strong>MySQL</strong>.
+   For  backend  <strong>Express.js</strong>, and databases like <strong>MongoDB</strong> or <strong>MySQL</strong>
   </p>
 
   <p>
