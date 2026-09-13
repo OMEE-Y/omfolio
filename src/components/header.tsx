@@ -38,7 +38,7 @@ export default function Header() {
           className="w-20 h-20 rounded-xl overflow-hidden border border-zinc-200 dark:border-white/10 bg-zinc-100 dark:bg-zinc-900 cursor-pointer group"
         >
           <img
-            src="/pfp.png"
+            src="https://github.com/OMEE-Y.png"
             alt="Om Yewale"
             className="w-full h-full object-cover transition-transform duration-500 "
           />
@@ -55,7 +55,7 @@ export default function Header() {
           </button>
 
           <img
-            src="/pfp.png"
+            src="https://github.com/OMEE-Y.png"
             alt="Om Yewale"
             className="max-w-full max-h-[85vh] rounded-2xl object-contain shadow-2xl"
           />
