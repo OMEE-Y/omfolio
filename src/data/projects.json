@@ -1,66 +1,47 @@
 [
   {
-    "sectionTitle": "Web2",
-    "projects": [
-      {
-        "title": "Links Vault",
-        "description": "A digital notebook to store and organize web links. Built with MongoDB for data storage and JWT for user authentication.",
-        "image": "/linkvault.png",
-        "github": "https://github.com/OMEE-Y/secondbrain-link-vault-",
-        "live": "https://secondbrain-link-vault.vercel.app/",
-        "skills": [
-          { "name": "Next.js" },
-          { "name": "Tailwindcss" },
-          { "name": "Express" },
-          { "name": "Node.js" },
-          { "name": "MongoDB" },
-          { "name": "JWT" }
-        ]
-      }
+    "title": "Links Vault",
+    "description": "A digital notebook to store and organize web links. Built with MongoDB for data storage and JWT for user authentication.",
+    "github": "https://github.com/OMEE-Y/secondbrain-link-vault-",
+    "live": "https://secondbrain-link-vault.vercel.app/",
+    "skills": [
+      { "name": "Next.js" },
+      { "name": "Tailwindcss" },
+      { "name": "Express" },
+      { "name": "Node.js" },
+      { "name": "MongoDB" },
+      { "name": "JWT" }
     ]
   },
   {
-    "sectionTitle": "CLI Tools",
-    "projects": [
-      {
-        "title": "Wallhavencli",
-        "description": "A command-line tool to search for and download wallpapers from wallhaven.cc directly inside the terminal.",
-        "image": "",
-        "github": "https://github.com/OMEE-Y/wallhavencli",
-        "live": "",
-        "skills": [
-          { "name": "Java" }
-        ]
-      },
-      {
-        "title": "Setup Dodo",
-        "description": "A command-line tool that automatically adds Dodo Payments setup into Next.js, Express, or Better-Auth projects.",
-        "image": "/setupdodo.jpg",
-        "github": "https://github.com/OMEE-Y/setup-dodo",
-        "live": "https://www.npmjs.com/package/setup-dodo",
-        "skills": [
-          { "name": "Javascript" }
-        ]
-      }
+    "title": "Wallhavencli",
+    "description": "A command-line tool to search for and download wallpapers from wallhaven.cc directly inside the terminal.",
+    "github": "https://github.com/OMEE-Y/wallhavencli",
+    "live": "",
+    "skills": [
+      { "name": "Java" }
     ]
   },
   {
-    "sectionTitle": "AI",
-    "projects": [
-      {
-        "title": "DocRAG Chatbot",
-        "description": "An AI chatbot that lets you upload documents and ask questions about them. It reads the files locally and uses Groq to answer based on the text.",
-        "image": "/docrag.png",
-        "github": "https://github.com/OMEE-Y/DocRAG",
-        "live": "",
-        "skills": [
-          { "name": "TypeScript" },
-          { "name": "Node.js" },
-          { "name": "Express" },
-          { "name": "Groq API" },
-          { "name": "Multer" }
-        ]
-      }
+    "title": "Setup Dodo",
+    "description": "A command-line tool that automatically adds Dodo Payments setup into Next.js, Express, or Better-Auth projects.",
+    "github": "https://github.com/OMEE-Y/setup-dodo",
+    "live": "https://www.npmjs.com/package/setup-dodo",
+    "skills": [
+      { "name": "Javascript" }
+    ]
+  },
+  {
+    "title": "DocRAG Chatbot",
+    "description": "An AI chatbot that lets you upload documents and ask questions about them. It reads the files locally and uses Groq to answer based on the text.",
+    "github": "https://github.com/OMEE-Y/DocRAG",
+    "live": "",
+    "skills": [
+      { "name": "TypeScript" },
+      { "name": "Node.js" },
+      { "name": "Express" },
+      { "name": "Groq API" },
+      { "name": "Multer" }
     ]
   }
 ]

@@ -1,135 +1,51 @@
-"use client";
-
-import { useState } from "react";
-import { GraduationCap } from "@phosphor-icons/react";
 import Image from "next/image";
 
-type EducationItem = {
-  institute: string;
-  degree: string;
-  duration: string;
-  description?: string[];
-  logo?: string;
-};
-
-const educationData: EducationItem[] = [
+const educationData = [
   {
     institute: "Vidyalankar Institute of Technology, Mumbai",
     degree: "B.Tech in Information Technology",
     duration: "2024 - 2028",
     logo: "/vitlogo.png",
-   description: [
-  "opted for a minor in ai to explore the field beyond the basics",
-  "built a strong foundation in cs fundamentals",
-  "got interested in java here and started exploring backend development",
-  
-],
   },
 ];
 
 export default function EducationPage() {
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
-
-  const toggleExpand = (index: number) => {
-    setExpandedIndex(expandedIndex === index ? null : index);
-  };
-
   return (
-    <section className="mt-16 mb-24 space-y-8 px-4 sm:px-0">
+    <section className="mt-16 mb-24 max-w-xl space-y-6 px-4 sm:px-0">
       <h2 className="font-instrument text-3xl font-normal tracking-tight text-zinc-900 dark:text-zinc-100">
         education
       </h2>
 
-      <div className="max-w-xl space-y-4">
-        {educationData.map((item, index) => {
-          const isExpanded = expandedIndex === index;
-          const hasLogo = !!item.logo;
-
-          return (
-            <div
-              key={index}
-              className="group cursor-pointer rounded-2xl border border-zinc-100 bg-white p-4 transition-all duration-300 hover:border-pink-200 hover:bg-zinc-50/50 dark:border-zinc-900/50 dark:bg-zinc-900/10 dark:hover:border-pink-800 dark:hover:bg-zinc-900/30"
-              onClick={() => toggleExpand(index)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  e.preventDefault();
-                  toggleExpand(index);
-                }
-              }}
-              aria-expanded={isExpanded}
-            >
-              <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-start sm:gap-4">
-                <div className="flex min-w-0 flex-1 items-start gap-3 sm:gap-4">
-                  <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-zinc-100 bg-zinc-50 dark:border-zinc-800/80 dark:bg-zinc-900 sm:h-12 sm:w-12">
-                    {hasLogo ? (
-                      <Image
-                        src={item.logo!}
-                        alt={`${item.institute} logo`}
-                        width={48}
-                        height={48}
-                        className="object-contain"
-                      />
-                    ) : (
-                      <GraduationCap
-                        size={20}
-                        weight="duotone"
-                        className="text-zinc-500 dark:text-zinc-400 sm:scale-110"
-                      />
-                    )}
-                  </div>
-
-                  <div className="min-w-0 flex-1 space-y-1">
-                    <div className="w-full min-w-0">
-                      <h3 className="break-words text-[13px] font-semibold leading-snug text-zinc-900 dark:text-zinc-100 sm:text-[14px]">
-                        {item.institute}
-                      </h3>
-                    </div>
-
-                    <p className="text-[12px] font-medium leading-normal text-zinc-500 dark:text-zinc-400 sm:text-[13px]">
-                      {item.degree}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mt-1 flex shrink-0 items-center justify-between gap-1.5 pl-[52px] pt-1 sm:mt-0 sm:justify-end sm:gap-2.5 sm:pl-0 sm:pt-0.5">
-                  <span className="tabular-nums text-[10px] font-semibold uppercase tracking-wide text-zinc-400 dark:text-zinc-500 sm:text-[11px]">
-                    {item.duration}
-                  </span>
-
-                  <svg
-                    className={`h-3.5 w-3.5 text-zinc-400 transition-transform duration-300 dark:text-zinc-500 sm:h-4 sm:w-4 ${
-                      isExpanded ? "rotate-180" : ""
-                    }`}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </div>
-              </div>
-
-             
-              {isExpanded && item.description && item.description.length > 0 && (
-                <div className="mt-4 border-t border-zinc-100 pt-3 dark:border-zinc-800/60">
-                  <ul className="list-disc space-y-1 pl-5 text-[12px] text-zinc-600 dark:text-zinc-400 sm:text-[13px]">
-                    {item.description.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
-                </div>
+      <div className="space-y-4">
+        {educationData.map((item, index) => (
+          <div key={index} className="flex items-start justify-between gap-4">
+            <div className="flex items-center gap-3 sm:gap-4">
+              {item.logo && (
+                <Image
+                  src={item.logo}
+                  alt={item.institute}
+                  width={36}
+                  height={36}
+                  style={{ width: "auto", height: "auto" }}
+                  className="h-9 w-9 rounded object-contain shrink-0"
+                />
               )}
+
+              <div className="space-y-0.5">
+                <h3 className="text-[13px] font-medium leading-snug text-zinc-900 dark:text-zinc-100 sm:text-[14px]">
+                  {item.institute}
+                </h3>
+                <p className="text-[12px] leading-normal text-zinc-500 dark:text-zinc-500 sm:text-[13px]">
+                  {item.degree}
+                </p>
+              </div>
             </div>
-          );
-        })}
+
+            <span className="shrink-0 font-mono text-[11px] text-zinc-400 dark:text-zinc-600">
+              {item.duration}
+            </span>
+          </div>
+        ))}
       </div>
     </section>
   );

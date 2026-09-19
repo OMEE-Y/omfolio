@@ -29,38 +29,23 @@ export default function Header() {
           </h1>
 
           <p className="text-sm text-black/70 dark:text-white/70 -mt-0.5 font-medium ml-0.5">
-            {age} y/o • full-stack engineer
+            {age} y/o • developer from India
           </p>
         </div>
 
-        <div
-          onClick={() => setOpen(true)}
-          className="w-20 h-20 rounded-xl overflow-hidden border border-zinc-200 dark:border-white/10 bg-zinc-100 dark:bg-zinc-900 cursor-pointer group"
-        >
-          <img
-            src="https://github.com/OMEE-Y.png"
-            alt="Om Yewale"
-            className="w-full h-full object-cover transition-transform duration-500 "
-          />
-        </div>
+      <div
+  onClick={() => setOpen(true)}
+  className="w-20 h-20 rounded-full overflow-hidden border border-zinc-200 dark:border-white/10 bg-zinc-100 dark:bg-zinc-900 cursor-pointer group"
+>
+  <img
+    src="https://github.com/OMEE-Y.png"
+    alt="Om Yewale"
+    className="w-full h-full object-cover transition-transform duration-500"
+  />
+</div>
       </header>
 
-      {open && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
-          <button
-            onClick={() => setOpen(false)}
-            className="absolute top-6 right-6 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition"
-          >
-            <X size={22} weight="bold" />
-          </button>
-
-          <img
-            src="https://github.com/OMEE-Y.png"
-            alt="Om Yewale"
-            className="max-w-full max-h-[85vh] rounded-2xl object-contain shadow-2xl"
-          />
-        </div>
-      )}
+    
     </>
   );
 }
